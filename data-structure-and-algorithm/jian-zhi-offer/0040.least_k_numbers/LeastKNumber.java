@@ -1,6 +1,4 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
@@ -28,6 +26,5 @@ public class LeastKNumber {
 		var case1_k = 3;
 		var result1 = test.getLeastNumbers(case1_arr, case1_k);
 		System.out.print(Arrays.toString(result1));
-
 	}
 }
