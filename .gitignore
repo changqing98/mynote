@@ -4,3 +4,4 @@
 out
 build
 _book
+*.o
