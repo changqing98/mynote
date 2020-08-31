@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
-public class Main0029 {
+public class GetLeastNumbers {
 
 	public static void main(String[] args) {
-		Main0029 test = new Main0029();
+		GetLeastNumbers test = new GetLeastNumbers();
 		System.out.println(test.GetLeastNumbers_Solution(new int[]{1, 2, 3, 6, 7, 9, 2, 4, 6}, 4));
 	}
 

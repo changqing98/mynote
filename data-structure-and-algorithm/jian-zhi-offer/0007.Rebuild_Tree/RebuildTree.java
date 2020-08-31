@@ -1,6 +1,3 @@
-import java.util.HashMap;
-import java.util.Map;
-
 public class RebuildTree {
 	public TreeNode reBuildTree(int[] preorder, int[] inorder) {
 		return helper(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1);

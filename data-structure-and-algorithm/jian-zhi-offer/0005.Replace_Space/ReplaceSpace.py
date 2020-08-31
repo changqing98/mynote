@@ -1,5 +1,5 @@
 
-class Main0005:
+class QueueByTwoStacks:
     def replacespace(self, s: str) -> str:
         result = []
         for i in s:

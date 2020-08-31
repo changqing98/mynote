@@ -1,6 +1,4 @@
-import org.junit.jupiter.api.Test;
-
-class ReverseList {
+public class ReverseList {
 	public static ListNode reverseList(ListNode headNode) {
 		if (headNode == null || headNode.next == null) {
 			return headNode;
