@@ -1,4 +1,4 @@
-public class SingleListReverser {
+  public class SingleListReverser {
 
 	public static Node reverse(Node head) {
 		if(head == null){
@@ -31,6 +31,7 @@ public class SingleListReverser {
 		Node node1 = new Node(1, node2);
 		Node node = new Node(0, node1);
 		System.out.println(reverseByRecursion(node));
+		System.out.println(reverse(node3));
 	}
 
 	private static class Node {
