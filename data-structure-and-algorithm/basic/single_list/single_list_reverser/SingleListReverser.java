@@ -30,8 +30,8 @@
 		Node node2 = new Node(2, node3);
 		Node node1 = new Node(1, node2);
 		Node node = new Node(0, node1);
+		System.out.println(reverse(node));
 		System.out.println(reverseByRecursion(node));
-		System.out.println(reverse(node3));
 	}
 
 	private static class Node {

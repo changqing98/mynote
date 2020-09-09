@@ -1,11 +1,24 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 // ListNode 单链表定义
 type ListNode struct {
 	val  int
 	next *ListNode
+}
+
+func (node *ListNode) String() string {
+	var next string
+	if node.next == nil {
+		next = "nil"
+	} else {
+		next = node.next.String()
+	}
+	return "[val:" + strconv.Itoa(node.val) + ", next:" + next + "]"
 }
 
 func reverse(head *ListNode) *ListNode {
@@ -47,17 +60,6 @@ func main() {
 		val:  1,
 		next: &node2,
 	}
-	var result = reverse(&node1)
-	for result != nil {
-		fmt.Print(result.val)
-		result = result.next
-	}
-
-	fmt.Println()
-
-	result = reverseByRecursion(&node3)
-	for result != nil {
-		fmt.Print(result.val)
-		result = result.next
-	}
+	fmt.Println(reverse(&node1).String())
+	fmt.Println(reverseByRecursion(&node3).String())
 }
