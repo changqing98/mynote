@@ -73,10 +73,6 @@ services:
     hostname: zoo1
     ports:
       - "2181:2181"
-    volumes:
-      - "./zookeeper1/zoo.cfg:/conf/zoo.cfg" # 配置文件，参考下面给出的zoo.cfg配置
-      - "./zookeeper1/data:/data"
-      - "./zookeeper1/datalog:/datalog"
     environment:
       ZOO_MY_ID: 1 # id
       ZOO_SERVERS: server.1=zoo1:2888:3888 server.2=zoo2:2888:3888 server.3=zoo3:2888:3888
@@ -91,10 +87,6 @@ services:
     hostname: zoo2
     ports:
       - "2182:2181"
-    volumes:
-      - "./zookeeper2/zoo.cfg:/conf/zoo.cfg" # 配置文件，参考下面给出的zoo.cfg配置
-      - "./zookeeper2/data:/data"
-      - "./zookeeper2/datalog:/datalog"
     environment:
       ZOO_MY_ID: 2
       ZOO_SERVERS: server.1=zoo1:2888:3888 server.2=zoo2:2888:3888 server.3=zoo3:2888:3888
@@ -109,10 +101,6 @@ services:
     hostname: zoo3
     ports:
       - "2183:2181"
-    volumes:
-      - "./zookeeper3/zoo.cfg:/conf/zoo.cfg" # 配置文件，参考下面给出的zoo.cfg配置
-      - "./zookeeper4/data:/data"
-      - "./zookeeper3/datalog:/datalog"
     environment:
       ZOO_MY_ID: 3
       ZOO_SERVERS: server.1=zoo1:2888:3888 server.2=zoo2:2888:3888 server.3=zoo3:2888:3888
