@@ -12,6 +12,8 @@ func Test_rob(t *testing.T) {
 		want int
 	}{
 		{"case", args{[]int{1, 2, 3, 1}}, 4},
+		{"case", args{[]int{2, 1, 1, 2}}, 4},
+		{"case", args{[]int{1, 3, 1}}, 3},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
