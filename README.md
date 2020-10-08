@@ -1,4 +1,3 @@
-<link rel="stylesheet" type="text/css" href="auto-number-title.css" />
 [TOC]
 # 计算机技术（后端研发）知识点梳理
 
