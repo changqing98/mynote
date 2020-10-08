@@ -1,5 +1,5 @@
+<link rel="stylesheet" type="text/css" href="auto-number-title.css" />
 [TOC]
-
 # 计算机技术（后端研发）知识点梳理
 
 ## 目录
@@ -39,13 +39,13 @@
 
 ### Kafka
 
-#### Kafka基本概念
+#### Kafka 基本概念
 
-| 专业术语              | 解释                                                         |
-| --------------------- | ------------------------------------------------------------ |
-| ISR(In Sync Replicas) | 同步副本列表，只有ISR中的副本才可以参选leader                |
-| LEO(Log End Offset)   | 分区的最后一条消息的Offset                                   |
-| HW(High Water Mark）  | 高水位，Kafka使用Leader副本的高水位作为分区的高水位，即对外消费者可见的消息偏移 |
+| 专业术语              | 解释                                                                               |
+| --------------------- | ---------------------------------------------------------------------------------- |
+| ISR(In Sync Replicas) | 同步副本列表，只有 ISR 中的副本才可以参选 leader                                   |
+| LEO(Log End Offset)   | 分区的最后一条消息的 Offset                                                        |
+| HW(High Water Mark）  | 高水位，Kafka 使用 Leader 副本的高水位作为分区的高水位，即对外消费者可见的消息偏移 |
 
 #### Kafka 重要配置
 
@@ -56,8 +56,6 @@ acks：可选值 0、1、all
 - 0：leader 分区副本所在的 broker 收到请求，立即返回响应；
 - 1：leader 分区副本所在的 broker 收到请求，且 leader 副本写入成功，才返回响应；
 - all：leader 分区副本所在的 broker 收到请求，且所有副本写入成功，才返回响应。请求会被保存在一个缓冲区里，直到 leader 发现所有跟随者副本都复制了消息，响应才会被返回给客户端
-
-
 
 #### 如何保证消息不丢失
 
@@ -82,12 +80,12 @@ acks：可选值 0、1、all
 消息的不丢失实现方案：
 
 1. 生产者设置 acks 参数为 all，且配置生产消息的回调函数，这样消息发送会有成功或失败结果回调，我们可以做相应的处理；
-2. broker 端我们设置min.insync.replicas参数，副本数量不足时，拒绝处理新消息，即禁止生产者生产消息；将unclean.leader.election.enable参数设置为false，即不允许不同步的副本参选leader（会损失一些可用性）；
+2. broker 端我们设置 min.insync.replicas 参数，副本数量不足时，拒绝处理新消息，即禁止生产者生产消息；将 unclean.leader.election.enable 参数设置为 false，即不允许不同步的副本参选 leader（会损失一些可用性）；
 3. 消费者端我们这个可以设置偏移量的提交未手动提交，即每次消息处理成功，手动提交偏移。
    如果采用线程池消费消息，那就需要我们这边来保证消息处理是成功的，如果发生异常，我们需要进行业务报警，人工介入处理或者将消息持久化到数据库等，稍后进行重试。
 
-#### Kafka如何实现高可用
+#### Kafka 如何实现高可用
 
-##### Broker宕机
+##### Broker 宕机
 
-Kafka的Controller在zookeeper的broker注册了监听，一旦一台broker宕机，controler会读取改broker上所有的分区状态，并且所有
+Kafka 的 Controller 在 zookeeper 的 broker 注册了监听，一旦一台 broker 宕机，controler 会读取改 broker 上所有的分区状态，并且所有
