@@ -1,9 +1,22 @@
-# 我的学习笔记
+[TOC]
 
-[数据结构与算法](data-structure-and-algorithm)
+# 计算机技术知识点梳理
 
-- [算法基础](data-structure-and-algorithm/basic)
+## 操作系统
 
-- [剑指offer](data-structure-and-algorithm/jian-zhi-offer)
+​		定义：操作系统是管理计算机硬件与软件资源的计算机程序。
 
-- [算法基础](data-structure-and-algorithm/leetcode)
+### 操作系统概论
+
+#### 进程与线程
+
+##### 进程定义
+
+​		进程是一段程序的执行过程。
+
+##### 进程与线程的区别
+
+​		进程是系统资源分配的最小单位，线程是处理机调度的最小单位。
+
+
+
