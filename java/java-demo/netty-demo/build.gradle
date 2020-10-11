@@ -1,0 +1,12 @@
+plugins {
+  id 'idea'
+  id 'java-library'
+}
+
+repositories{
+  mavenCentral()
+}
+
+dependencies {
+  compile group: 'io.netty', name: 'netty-all', version: '4.1.42.Final'
+}

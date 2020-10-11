@@ -1,0 +1,28 @@
+apply plugin: "java"
+
+dependencies {
+    api(project(":module-demo1"))
+    api(project(":module-demo2"))
+}
+
+sourceSets {
+    main {
+        java {
+            exclude 'com/yechangqing/demo/java/gradle/module/exclude'
+        }
+    }
+}
+
+
+
+task sourceJar(type: Jar) {
+    group = "test-group"
+    archiveClassifier = "sources"
+    version = "1.0.0"
+    from sourceSets.main.java
+
+}
+
+task hello {
+    println  "hello"
+}

@@ -6,3 +6,9 @@ build
 _book
 *.o
 *.iml
+.gradle
+bin
+.project
+.idea
+.classpath
+.settings

@@ -1,0 +1,8 @@
+spring:
+  kafka:
+    bootstrap-servers: yechangqing.com:9092
+    consumer:
+      group-id: kafka-demo
+logging:
+  level:
+    root: INFO
