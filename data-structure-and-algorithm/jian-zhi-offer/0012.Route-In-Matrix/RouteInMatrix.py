@@ -3,34 +3,24 @@ from typing import List
 
 class RouteInMatrix:
     def exist(self, board: List[List[str]], word: str) -> bool:
-        rows = len(board)
-        cols = len(board[0])
-        visited = [[False] * cols] * rows
-        for i in range(rows):
-            for j in range(cols):
-                if self.dfs(board, word, 0, 0, 0, visited) :
+        def dfs(i: int, j: int, k: int):
+            if not 0 <= i < len(board) or not 0 <= j < len(board[0]) or not board[i][j] == word[k] :
+                return False
+            if k == len(word) - 1:
+                return True
+            tmp, board[i][j] = board[i][j], '*'
+            result = dfs(i + 1, j, k + 1) or dfs(i, j + 1, k + 1) or dfs(i - 1, j, k + 1) or dfs(i, j - 1, k + 1)
+            board[i][j] = tmp
+            return result
+        for i in range(len(board)):
+            for j in range(len(board[0])):
+                if(dfs(i, j, 0)):
                     return True
         return False
 
-    def dfs(self, board: List[List[str]], word: str, k: int, row: int, col: int, visited: List[List[bool]]) -> bool:
-        result = False
-        if row >= 0 and row < len(board) and col >= 0 and col < len(board[0]) and (not visited[row][col]) and k < len(word) and board[row][col] == word[k]   :
-            visited[row][col] = True
-            k = k + 1
-            if k == len(word):
-                return True
-            down = self.dfs(board, word, k, row + 1, col, visited)
-            up = self.dfs(board, word, k, row - 1, col, visited)
-            left = self.dfs(board, word, k, row, col - 1, visited)
-            right = self.dfs(board, word, k, row, col + 1, visited)
-            result = down or up or left or right
-            if not result :
-                visited[row][col] = False
-                k = k - 1
-        return result
 
 if __name__ == "__main__":
     test = RouteInMatrix()
-    board = [["A","B","C","E"]]
-    word = "A"
+    board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]
+    word = "ABCCED"
     print(test.exist(board, word))
