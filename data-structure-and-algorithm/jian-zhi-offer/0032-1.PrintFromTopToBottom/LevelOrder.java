@@ -3,12 +3,15 @@ import java.util.*;
 /**
  * 从上往下打印出二叉树的每个节点，同层节点从左至右打印。
  */
-public class PrintFromTopToBottom {
+public class LevelOrder {
 
-	public ArrayList<Integer> PrintFromTopToBottom(TreeNode root) {
+	public int[] levelOrder(TreeNode root) {
+		if (root == null) {
+			return new int[] {};
+		}
 		TreeNode node = root;
 		LinkedList<TreeNode> list = new LinkedList<>();
-		ArrayList<Integer> result = new ArrayList<>();
+		List<Integer> result = new ArrayList<>();
 		list.add(root);
 		while (!list.isEmpty()) {
 			node = list.poll();
@@ -21,8 +24,7 @@ public class PrintFromTopToBottom {
 				list.offer(node.right);
 			}
 		}
-		return result;
-
+		return result.stream().mapToInt(i -> i).toArray();
 	}
 
 	public static class TreeNode {
@@ -32,7 +34,6 @@ public class PrintFromTopToBottom {
 
 		public TreeNode(int val) {
 			this.val = val;
-
 		}
 	}
 
@@ -41,7 +42,8 @@ public class PrintFromTopToBottom {
 		root.left = new TreeNode(2);
 		root.right = new TreeNode(3);
 
-		List<Integer> result = new PrintFromTopToBottom().PrintFromTopToBottom(root);
+		LevelOrder test = new LevelOrder();
+		var result = test.levelOrder(root);
 		System.out.println(result);
 	}
 }
