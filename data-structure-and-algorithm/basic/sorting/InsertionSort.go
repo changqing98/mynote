@@ -1,11 +1,9 @@
-package main
+package sorting
 
-import "fmt"
-
-func InsertionSort(array []int) {
+func InsertionSort(array []int) []int{
 	len := len(array)
 	if len <= 1 {
-		return
+		return array
 	}
 	for i := 1; i < len; i++ {
 		var tmp = array[i]
@@ -15,10 +13,5 @@ func InsertionSort(array []int) {
 		}
 		array[j] = tmp
 	}
-}
-
-func main() {
-	var array = []int{1, 3, 5, 2, 4}
-	InsertionSort(array)
-	fmt.Print(array)
+	return array
 }
