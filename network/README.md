@@ -1,8 +1,10 @@
 # 计算机网络
 
-## TCP 连接建立与释放
+## 一、 传输层
 
-#### TCP 建立连接 3 次握手
+### 1.1 TCP 
+
+#### 1.1.1 TCP 建立连接 3 次握手
 
 ```sequence
 client -> server: SYN, seq = x
@@ -16,4 +18,5 @@ note right of server: 服务端收到客户端的ACK后进入ESTABLISHED状态
 
 ```
 
-## 
+### 1.1.2 TCP连接释放
+
