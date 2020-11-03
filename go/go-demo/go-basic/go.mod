@@ -1,4 +1,4 @@
-module go-basic
+module basic
 
 go 1.13
 
