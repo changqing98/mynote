@@ -1,23 +1,15 @@
 package basic
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func doublePointer(){
-	type listNode struct{
-		Val int
-		Next *listNode
-	}
-
-	node2 := listNode{2, nil}
-	node1 := listNode{1, &node2}
-
-	p1 := &node1
-	p2 := &p1
-	fmt.Println((*p2).Next)
-
+func Test_doublePointer(t *testing.T) {
+	doublePointer()
 }
 
-func main() {
+func Test_pointer(t *testing.T){
 	var a int = 10
 	fmt.Println(a)
 	fmt.Println(&a)
@@ -43,7 +35,7 @@ func main() {
 
 	array := []int{1, 2, 3, 4}
 	fmt.Println(array)
-	var pp *int = &array[0]
+	var pp = &array[0]
 	fmt.Print(pp)
 
 	fmt.Println(*pp)

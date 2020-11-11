@@ -1,4 +1,4 @@
-package main
+package basic
 
 import (
 	"fmt"
@@ -7,13 +7,13 @@ import (
 	"github.com/go-xorm/xorm"
 )
 
-type test struct {
+type XormModel struct {
 	Id   int
 	Name string
 }
 
 func main() {
-	test := test{
+	test := XormModel{
 		Name: "changqing2",
 	}
 	engine, _ := xorm.NewEngine("mysql", "root:123456@tcp(yechangqing.com:3306)/test")
@@ -22,6 +22,6 @@ func main() {
 		fmt.Print(err)
 	}
 
-	engine.Get(&test2)
-	fmt.Print(test2)
+	engine.Get(&test)
+	fmt.Print(test)
 }

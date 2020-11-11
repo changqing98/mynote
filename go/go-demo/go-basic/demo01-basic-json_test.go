@@ -3,14 +3,10 @@ package basic
 import (
 	"encoding/json"
 	"fmt"
+	"testing"
 )
 
-type UserJSON struct {
-	Name string
-	Age  int
-}
-
-func main() {
+func Test_json(t *testing.T) {
 	user := UserJSON{
 		Name: "test",
 		Age:  11,
@@ -19,6 +15,6 @@ func main() {
 	fmt.Print(string(result))
 
 	var jsonStr = `{"name":"test2","Age":11}`
-	json.Unmarshal([]byte(jsonStr), &user)
+	_ = json.Unmarshal([]byte(jsonStr), &user)
 	fmt.Print(user)
 }
