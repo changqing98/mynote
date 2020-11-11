@@ -172,17 +172,13 @@ func merge(array []int, start int, mid int, end int, tmp []int){
 }
 ```
 
-
-
-
-
 ## 二、 TOP K算法
 ### 2.1 有限数集
 所有的数可以全部读到内存中进行计算
 
 #### 2.1.1 快排
 
-首先快拍的思想是选定一个基准然后使小于该基准的数全在基准的左边，大于基准的数全在基准的右边。
+首先快排的思想是选定一个基准然后使小于该基准的数全在基准的左边，大于基准的数全在基准的右边。
 
 因此我们可以分几下几部求解：
 
@@ -229,3 +225,192 @@ func partition(arr []int, i int, j int) int {
 	return i
 }
 ```
+
+## 三、 玩转单链表
+
+### 3.1 单链表反转
+
+```go
+package main
+
+import (
+	"fmt"
+	"strconv"
+)
+
+// ListNode 单链表定义
+type ListNode struct {
+	val  int
+	next *ListNode
+}
+
+func (node *ListNode) String() string {
+	var next string
+	if node.next == nil {
+		next = "nil"
+	} else {
+		next = node.next.String()
+	}
+	return "[val:" + strconv.Itoa(node.val) + ", next:" + next + "]"
+}
+
+// 1. 非递归实现
+func reverse(head *ListNode) *ListNode {
+	if head == nil {
+		return head
+	}
+	var cur = head.next
+	head.next = nil
+	var tmp *ListNode
+	for cur != nil {
+		tmp = cur.next
+		cur.next = head
+		head = cur
+		cur = tmp
+	}
+	return head
+}
+
+// 2. 递归实现
+func reverseByRecursion(head *ListNode) *ListNode {
+	if head == nil || head.next == nil {
+		return head
+	}
+	var pre = reverse(head.next)
+	head.next.next = head
+	head.next = nil
+	return pre
+}
+
+func main() {
+	node3 := ListNode{
+		val:  3,
+		next: nil,
+	}
+	node2 := ListNode{
+		val:  2,
+		next: &node3,
+	}
+	node1 := ListNode{
+		val:  1,
+		next: &node2,
+	}
+	fmt.Println(reverse(&node1).String())
+	fmt.Println(reverseByRecursion(&node3).String())
+}
+```
+
+### 3.2 单链表K个结点为一组进行反转
+
+[leetcode: 25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)
+
+```go
+package main
+
+import (
+	"fmt"
+	"strconv"
+)
+
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
+
+func (node *ListNode) String() string {
+	var next string
+	if node.Next == nil {
+		next = "nil"
+	} else {
+		next = node.Next.String()
+	}
+	return "[val:" + strconv.Itoa(node.Val) + ", next:" + next + "]"
+}
+
+func reverseKGroup(head *ListNode, k int) *ListNode {
+	tmp := head
+	count := 0
+	for tmp != nil && count < k {
+		count++
+		tmp = tmp.Next
+	}
+	if count < k {
+		return head
+	}
+	count = 0
+	cur := head
+	var next *ListNode = nil
+	var pre *ListNode = nil
+    // 经过反转之后头结点则会变成分组的尾结点
+	reverseTail := head
+    // 反转第一组k个数
+	for cur != nil && count < k {
+		next = cur.Next
+		cur.Next = pre
+		pre = cur
+		cur = next
+		count++
+	}
+	if next != nil {
+        // 递归反转以第K+1个结点为首的后续结点
+		reverseTail.Next = reverseKGroup(next, k)
+	}
+	return pre
+}
+
+func main() {
+	node5 := ListNode{5, nil}
+	node4 := ListNode{4, &node5}
+	node3 := ListNode{3, &node4}
+	node2 := ListNode{2, &node3}
+	node1 := ListNode{1, &node2}
+	result := reverseKGroup(&node1, 2)
+	fmt.Print(result.String())
+}
+```
+
+### 3.3 单链表环的入口
+
+```java
+public class EntryNodeOfLoop {
+
+	public ListNode EntryNodeOfLoop(ListNode pHead) {
+		if (pHead == null) {
+			return null;
+		}
+		ListNode slow = pHead;
+		ListNode fast = pHead;
+		boolean flag = false;
+		// 首先判断是否有环
+		while (fast != null && fast.next != null) {
+			slow = slow.next;
+			fast = fast.next.next;
+			if (slow == fast) {
+				flag = true;
+				break;
+			}
+		}
+		// 如果没有环直接返回null
+		if (!flag) {
+			return null;
+		}
+		// 当两个指针在环上相遇，将其中一个指针指向头节点，另一个继续呆在相遇点，然后两个指针继续向前遍历，下次相遇点就是环的入口
+		fast = pHead;
+		while (fast != slow) {
+			fast = fast.next;
+			slow = slow.next;
+		}
+		return slow;
+	}
+
+	private static class ListNode {
+		int val;
+		ListNode next = null;
+
+		ListNode(int val) {
+			this.val = val;
+		}
+	}
+}
+```
+
