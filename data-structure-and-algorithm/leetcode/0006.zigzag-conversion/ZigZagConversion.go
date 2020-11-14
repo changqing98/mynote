@@ -12,24 +12,14 @@ func convert(s string, numRows int) string {
 		groups++
 	}
 	for i := 0; i < numRows; i++ {
-		if i == 0 || i == numRows-1 {
-			for j := 0; j < groups; j++ {
-				target := j*groupLength + i
-				if target < length {
-					result = append(result, s[target])
-				} else {
-					break
-				}
+		for j := 0; j < groups; j++ {
+			target := j*groupLength + i
+			if target < length {
+				result = append(result, s[target])
+			} else {
+				break
 			}
-		}
-		if i > 0 && i < numRows-1 {
-			for j := 0; j < groups; j++ {
-				target := j*groupLength + i
-				if target < length {
-					result = append(result, s[target])
-				} else {
-					break
-				}
+			if i > 0 && i < numRows-1 {
 				target = j*groupLength + (groupLength - i)
 				if target < length {
 					result = append(result, s[target])
