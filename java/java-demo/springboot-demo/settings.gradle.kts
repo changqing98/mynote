@@ -8,5 +8,6 @@ include(
   "springboot-mongo",
   "springboot-web",
   "springboot-aop",
-  "springboot-oauth"
+  "springboot-oauth",
+  "alipay"
 )
