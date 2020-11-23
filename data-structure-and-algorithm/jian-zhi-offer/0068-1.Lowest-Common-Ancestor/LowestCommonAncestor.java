@@ -1,14 +1,3 @@
-
-public class TreeNode {
-	int val;
-	TreeNode left;
-	TreeNode right;
-
-	TreeNode(int x) {
-		val = x;
-	}
-}
-
 public class LowestCommonAncestor {
 	public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
 		while (root != null) {
@@ -24,7 +13,7 @@ public class LowestCommonAncestor {
 	}
 
 	public TreeNode lowestCommonAncestor2(TreeNode root, TreeNode p, TreeNode q) {
-		if (p.val > q.val ){
+		if (p.val > q.val) {
 			TreeNode tmp = p;
 			p = q;
 			q = tmp;

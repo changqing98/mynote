@@ -1,4 +1,4 @@
-public class LowestCommonAncestor {
+public class LowestCommonAncestor2 {
     public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if(root == null || p == root || q == root){
             return root;
@@ -16,8 +16,8 @@ public class LowestCommonAncestor {
 
 	private static class TreeNode {
 		int val;
-		LowestCommonAncestor.TreeNode left;
-		LowestCommonAncestor.TreeNode right;
+		LowestCommonAncestor2.TreeNode left;
+		LowestCommonAncestor2.TreeNode right;
 		TreeNode(int x) { val = x; }
 	}
 

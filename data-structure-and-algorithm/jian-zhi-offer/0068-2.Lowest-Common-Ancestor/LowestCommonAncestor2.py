@@ -6,7 +6,7 @@ class TreeNode:
         self.right = None
 
 
-class LowestCommonAncestor:
+class LowestCommonAncestor2:
     def lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
         if root is None or p == root or q == root:
             return root
@@ -20,4 +20,4 @@ class LowestCommonAncestor:
 
 
 if __name__ == '__main__':
-    LowestCommonAncestor()
+    LowestCommonAncestor2()
