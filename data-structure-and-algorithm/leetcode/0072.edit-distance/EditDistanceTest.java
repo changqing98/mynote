@@ -1,13 +1,13 @@
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-class EditDistanceTest {
+public class EditDistanceTest {
 
 	@Test
-	void minDistance() {
+	public void minDistance() {
 		EditDistance test = new EditDistance();
-		assertEquals(5, test.minDistance("horse", "ros"));
+		assertEquals(3, test.minDistance("horse", "ros"));
 		assertEquals(5, test.minDistance("intention", "execution"));
 	}
 }
