@@ -1,6 +1,7 @@
 plugins {
   id "com.google.protobuf" version "0.8.12"
   id "java"
+  id "idea"
 }
 
 group 'com.yechangqing.demo.grpc'
@@ -23,7 +24,19 @@ dependencies {
   testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
+sourceSets {
+  main {
+    proto {
+      srcDir "$projectDir/../proto"
+    }
+    java {
+      srcDirs = ["src/main/java", "build/generated/main/java", "build/generated/main/grpc"]
+    }
+  }
+}
+
 protobuf {
+  generatedFilesBaseDir = "$projectDir/build/generated"
   protoc {
     artifact = "com.google.protobuf:protoc:3.11.0"
   }
@@ -33,6 +46,8 @@ protobuf {
     }
   }
   generateProtoTasks {
-
+    all()*.plugins {
+      grpc {}
+    }
   }
 }

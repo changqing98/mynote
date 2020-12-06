@@ -1,4 +1,4 @@
 # go
 
-protoc --go_out=plugins=grpc:grpc-go proto/*.proto
+protoc --go_out=plugins=grpc:grpc-go/ proto/*.proto
 
