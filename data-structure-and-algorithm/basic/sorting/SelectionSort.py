@@ -9,9 +9,3 @@ def sort(a: List[int]):
 			if a[j] < a[min]:
 				min = j
 		a[i], a[min] = a[min], a[i]
-
-
-if __name__ == '__main__':
-	array = [1, 5, 8, 3, 2, 9]
-	sort(array)
-	print(array)

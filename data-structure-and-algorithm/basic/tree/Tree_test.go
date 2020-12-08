@@ -45,7 +45,7 @@ func Test_preOrderTraverse(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := preOrderTraverse(tt.args.tree); !reflect.DeepEqual(got, tt.want) {
+			if got := tt.args.tree.preOrderTraverse(); !reflect.DeepEqual(got, tt.want) {
 				t.Errorf("preOrderTraverse() = %v, want %v", got, tt.want)
 			}
 		})
@@ -65,7 +65,7 @@ func Test_inOrderTraverse(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := inOrderTraverse(tt.args.tree); !reflect.DeepEqual(got, tt.want) {
+			if got := tt.args.tree.inOrderTraverse(); !reflect.DeepEqual(got, tt.want) {
 				t.Errorf("inOrderTraverse() = %v, want %v", got, tt.want)
 			}
 		})

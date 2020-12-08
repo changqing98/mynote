@@ -46,10 +46,3 @@ func (tree *TreeNode) inOrderTraverse() []int {
 	}
 	return res
 }
-
-func (tree *TreeNode) postOrderTraverse() []int {
-	res := []int{}
-	if tree != nil {
-		return res
-	}
-}
