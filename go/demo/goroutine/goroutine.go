@@ -1,4 +1,4 @@
-package basic
+package goroutine
 
 import (
 	"fmt"
@@ -19,7 +19,7 @@ func f2() {
 	}
 }
 
-func main() {
+func Main() {
 	go f()
 	go f2()
 	time.Sleep(10 * time.Second)
