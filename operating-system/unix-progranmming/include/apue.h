@@ -38,7 +38,7 @@
  */
 #define	DIR_MODE	(FILE_MODE | S_IXUSR | S_IXGRP | S_IXOTH)
 
-typedef	void	Sigfunc(int);	/* for signals handlers */
+typedef	void	Sigfunc(int);	/* for signal handlers */
 
 #define	min(a,b)	((a) < (b) ? (a) : (b))
 #define	max(a,b)	((a) > (b) ? (a) : (b))
@@ -66,15 +66,15 @@ ssize_t	 writen(int, const void *, size_t);	/* {Prog readn_writen} */
 
 int		 fd_pipe(int *);					/* {Prog sock_fdpipe} */
 int		 recv_fd(int, ssize_t (*func)(int,
-                                         const void *, size_t));	/* {Prog recvfd_sockets} */
+		         const void *, size_t));	/* {Prog recvfd_sockets} */
 int		 send_fd(int, int);					/* {Prog sendfd_sockets} */
 int		 send_err(int, int,
-                     const char *);			/* {Prog senderr} */
+		          const char *);			/* {Prog senderr} */
 int		 serv_listen(const char *);			/* {Prog servlisten_sockets} */
 int		 serv_accept(int, uid_t *);			/* {Prog servaccept_sockets} */
 int		 cli_conn(const char *);			/* {Prog cliconn_sockets} */
 int		 buf_args(char *, int (*func)(int,
-                                         char **));				/* {Prog bufargs} */
+		          char **));				/* {Prog bufargs} */
 
 int		 tty_cbreak(int);					/* {Prog raw} */
 int		 tty_raw(int);						/* {Prog raw} */
