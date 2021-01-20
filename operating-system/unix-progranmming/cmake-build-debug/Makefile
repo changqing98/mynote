@@ -68,10 +68,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/glluenew/cq/mynote/operating-system/unix-progranmming
+CMAKE_SOURCE_DIR = /Users/changqing/workspace/mynote/operating-system/unix-progranmming
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/glluenew/cq/mynote/operating-system/unix-progranmming/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/glluenew/cq/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles /Users/glluenew/cq/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles /Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/glluenew/cq/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named wait
+
+# Build rule for target.
+wait: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wait
+.PHONY : wait
+
+# fast build rule for target.
+wait/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wait.dir/build.make CMakeFiles/wait.dir/build
+.PHONY : wait/fast
 
 #=============================================================================
 # Target rules for targets named hello_world
@@ -250,6 +263,33 @@ ipc/pipe.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pipe.dir/build.make CMakeFiles/pipe.dir/ipc/pipe.c.s
 .PHONY : ipc/pipe.c.s
 
+proc/wait.o: proc/wait.c.o
+
+.PHONY : proc/wait.o
+
+# target to build an object file
+proc/wait.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wait.dir/build.make CMakeFiles/wait.dir/proc/wait.c.o
+.PHONY : proc/wait.c.o
+
+proc/wait.i: proc/wait.c.i
+
+.PHONY : proc/wait.i
+
+# target to preprocess a source file
+proc/wait.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wait.dir/build.make CMakeFiles/wait.dir/proc/wait.c.i
+.PHONY : proc/wait.c.i
+
+proc/wait.s: proc/wait.c.s
+
+.PHONY : proc/wait.s
+
+# target to generate assembly for a file
+proc/wait.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wait.dir/build.make CMakeFiles/wait.dir/proc/wait.c.s
+.PHONY : proc/wait.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -261,6 +301,7 @@ help:
 	@echo "... file"
 	@echo "... hello_world"
 	@echo "... pipe"
+	@echo "... wait"
 	@echo "... fs/file.o"
 	@echo "... fs/file.i"
 	@echo "... fs/file.s"
@@ -270,6 +311,9 @@ help:
 	@echo "... ipc/pipe.o"
 	@echo "... ipc/pipe.i"
 	@echo "... ipc/pipe.s"
+	@echo "... proc/wait.o"
+	@echo "... proc/wait.i"
+	@echo "... proc/wait.s"
 .PHONY : help
 
 

@@ -64,15 +64,16 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/glluenew/cq/mynote/operating-system/unix-progranmming
+CMAKE_SOURCE_DIR = /Users/changqing/workspace/mynote/operating-system/unix-progranmming
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/glluenew/cq/mynote/operating-system/unix-progranmming/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/wait.dir/all
 all: CMakeFiles/hello_world.dir/all
 all: CMakeFiles/pipe.dir/all
 all: CMakeFiles/file.dir/all
@@ -85,11 +86,39 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/wait.dir/clean
 clean: CMakeFiles/hello_world.dir/clean
 clean: CMakeFiles/pipe.dir/clean
 clean: CMakeFiles/file.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/wait.dir
+
+# All Build rule for target.
+CMakeFiles/wait.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wait.dir/build.make CMakeFiles/wait.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wait.dir/build.make CMakeFiles/wait.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target wait"
+.PHONY : CMakeFiles/wait.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/wait.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/wait.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/wait.dir/rule
+
+# Convenience name for target.
+wait: CMakeFiles/wait.dir/rule
+
+.PHONY : wait
+
+# clean rule for target.
+CMakeFiles/wait.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wait.dir/build.make CMakeFiles/wait.dir/clean
+.PHONY : CMakeFiles/wait.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/hello_world.dir
@@ -98,14 +127,14 @@ clean: CMakeFiles/file.dir/clean
 CMakeFiles/hello_world.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/glluenew/cq/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target hello_world"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target hello_world"
 .PHONY : CMakeFiles/hello_world.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/hello_world.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/glluenew/cq/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hello_world.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/glluenew/cq/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/hello_world.dir/rule
 
 # Convenience name for target.
@@ -125,14 +154,14 @@ CMakeFiles/hello_world.dir/clean:
 CMakeFiles/pipe.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pipe.dir/build.make CMakeFiles/pipe.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pipe.dir/build.make CMakeFiles/pipe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/glluenew/cq/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target pipe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target pipe"
 .PHONY : CMakeFiles/pipe.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pipe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/glluenew/cq/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pipe.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/glluenew/cq/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/pipe.dir/rule
 
 # Convenience name for target.
@@ -152,14 +181,14 @@ CMakeFiles/pipe.dir/clean:
 CMakeFiles/file.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/file.dir/build.make CMakeFiles/file.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/file.dir/build.make CMakeFiles/file.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/glluenew/cq/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target file"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target file"
 .PHONY : CMakeFiles/file.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/file.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/glluenew/cq/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/file.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/glluenew/cq/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/file.dir/rule
 
 # Convenience name for target.

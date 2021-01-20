@@ -1,5 +1,6 @@
-/Users/glluenew/cq/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/glluenew/cq/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/glluenew/cq/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles/hello_world.dir
-/Users/glluenew/cq/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles/pipe.dir
-/Users/glluenew/cq/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles/file.dir
+/Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles/wait.dir
+/Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles/hello_world.dir
+/Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles/pipe.dir
+/Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles/file.dir
