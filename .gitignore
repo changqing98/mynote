@@ -13,5 +13,5 @@ bin
 .classpath
 .settings
 *.class
-**/__pycahce__
-
+__pycahce__
+.vagrant
