@@ -1,0 +1,8 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/changqing/workspace/mynote/operating-system/unix-progranmming
+    -- src/file.cpp will be compiled to bin/file
+    -- src/hello_world.cpp will be compiled to bin/hello_world
+    -- src/pipe.cpp will be compiled to bin/pipe
+    -- src/wait.cpp will be compiled to bin/wait
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug
