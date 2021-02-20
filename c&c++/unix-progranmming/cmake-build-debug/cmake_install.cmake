@@ -1,4 +1,4 @@
-# Install script for directory: /Users/changqing/workspace/mynote/operating-system/unix-progranmming
+# Install script for directory: /Users/changqing/workspace/mynote/c&c++/unix-progranmming
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/changqing/workspace/mynote/c&c++/unix-progranmming/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

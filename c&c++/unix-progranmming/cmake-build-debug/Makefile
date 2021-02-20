@@ -68,10 +68,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/changqing/workspace/mynote/operating-system/unix-progranmming
+CMAKE_SOURCE_DIR = "/Users/changqing/workspace/mynote/c&c++/unix-progranmming"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/changqing/workspace/mynote/c&c++/unix-progranmming/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles /Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/changqing/workspace/mynote/c&c++/unix-progranmming/cmake-build-debug/CMakeFiles" "/Users/changqing/workspace/mynote/c&c++/unix-progranmming/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/changqing/workspace/mynote/operating-system/unix-progranmming/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/changqing/workspace/mynote/c&c++/unix-progranmming/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named hello_world
+
+# Build rule for target.
+hello_world: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello_world
+.PHONY : hello_world
+
+# fast build rule for target.
+hello_world/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/build
+.PHONY : hello_world/fast
+
+#=============================================================================
 # Target rules for targets named wait
 
 # Build rule for target.
@@ -144,17 +157,17 @@ wait/fast:
 .PHONY : wait/fast
 
 #=============================================================================
-# Target rules for targets named hello_world
+# Target rules for targets named fork
 
 # Build rule for target.
-hello_world: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello_world
-.PHONY : hello_world
+fork: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fork
+.PHONY : fork
 
 # fast build rule for target.
-hello_world/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/build
-.PHONY : hello_world/fast
+fork/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fork.dir/build.make CMakeFiles/fork.dir/build
+.PHONY : fork/fast
 
 #=============================================================================
 # Target rules for targets named pipe
@@ -263,6 +276,33 @@ ipc/pipe.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pipe.dir/build.make CMakeFiles/pipe.dir/ipc/pipe.c.s
 .PHONY : ipc/pipe.c.s
 
+proc/fork.o: proc/fork.c.o
+
+.PHONY : proc/fork.o
+
+# target to build an object file
+proc/fork.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fork.dir/build.make CMakeFiles/fork.dir/proc/fork.c.o
+.PHONY : proc/fork.c.o
+
+proc/fork.i: proc/fork.c.i
+
+.PHONY : proc/fork.i
+
+# target to preprocess a source file
+proc/fork.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fork.dir/build.make CMakeFiles/fork.dir/proc/fork.c.i
+.PHONY : proc/fork.c.i
+
+proc/fork.s: proc/fork.c.s
+
+.PHONY : proc/fork.s
+
+# target to generate assembly for a file
+proc/fork.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fork.dir/build.make CMakeFiles/fork.dir/proc/fork.c.s
+.PHONY : proc/fork.c.s
+
 proc/wait.o: proc/wait.c.o
 
 .PHONY : proc/wait.o
@@ -299,6 +339,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... file"
+	@echo "... fork"
 	@echo "... hello_world"
 	@echo "... pipe"
 	@echo "... wait"
@@ -311,6 +352,9 @@ help:
 	@echo "... ipc/pipe.o"
 	@echo "... ipc/pipe.i"
 	@echo "... ipc/pipe.s"
+	@echo "... proc/fork.o"
+	@echo "... proc/fork.i"
+	@echo "... proc/fork.s"
 	@echo "... proc/wait.o"
 	@echo "... proc/wait.i"
 	@echo "... proc/wait.s"
