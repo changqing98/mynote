@@ -2,21 +2,28 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class PreOrderTraversal {
-    public List<Integer> preorderTraversal(TreeNode root) {
+public class PostOrderTraversal {
+    public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         if(root == null){
             return result;
         }
         Stack<TreeNode> stack = new Stack<>();
+        TreeNode pre = null;
         while(root != null || !stack.isEmpty()){
             while(root != null){
-                result.add(root.val);
-                stack.add(root);
+                stack.push(root);
                 root = root.left;
             }
             root = stack.pop();
-            root = root.right;
+            if(root.right == null || root.right == pre){
+                result.add(root.val);
+                pre = root;
+                root = null;
+            }else {
+                stack.push(root);
+                root = root.right;
+            }
         }
         return result;
     }
