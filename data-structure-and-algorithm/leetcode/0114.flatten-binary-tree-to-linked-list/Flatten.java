@@ -1,6 +1,6 @@
 public class Flatten {
-    TreeNode prev;
-    public void flatten(TreeNode root) {
+    TreeNodeTraversal prev;
+    public void flatten(TreeNodeTraversal root) {
         if(root == null){
             return;
         }

@@ -31,13 +31,4 @@ public class EntryNodeOfLoop {
 		}
 		return slow;
 	}
-
-	private static class ListNode {
-		int val;
-		ListNode next = null;
-
-		ListNode(int val) {
-			this.val = val;
-		}
-	}
 }

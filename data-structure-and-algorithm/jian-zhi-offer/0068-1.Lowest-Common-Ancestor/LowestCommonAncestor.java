@@ -1,5 +1,5 @@
 public class LowestCommonAncestor {
-	public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+	public TreeNodeTraversal lowestCommonAncestor(TreeNodeTraversal root, TreeNodeTraversal p, TreeNodeTraversal q) {
 		while (root != null) {
 			if (root.val > p.val && root.val > q.val) {
 				root = root.left;
@@ -12,9 +12,9 @@ public class LowestCommonAncestor {
 		return root;
 	}
 
-	public TreeNode lowestCommonAncestor2(TreeNode root, TreeNode p, TreeNode q) {
+	public TreeNodeTraversal lowestCommonAncestor2(TreeNodeTraversal root, TreeNodeTraversal p, TreeNodeTraversal q) {
 		if (p.val > q.val) {
-			TreeNode tmp = p;
+			TreeNodeTraversal tmp = p;
 			p = q;
 			q = tmp;
 		}

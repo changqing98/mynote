@@ -1,15 +1,15 @@
 public class BinaryTreeRightSideView {
-    public List<Integer> rightSideView(TreeNode root) {
+    public List<Integer> rightSideView(TreeNodeTraversal root) {
         List<Integer> result = new ArrayList<>();
         if(root == null){
             return result;
         }
-        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        Queue<TreeNodeTraversal> queue = new LinkedList<TreeNodeTraversal>();
         queue.add(root);
         while(!queue.isEmpty()){
             int size = queue.size();
             for(int i = 1; i <= size; i++){
-                TreeNode rm = queue.poll();
+                TreeNodeTraversal rm = queue.poll();
                 if(i == size){
                     result.add(rm.val);
                 }

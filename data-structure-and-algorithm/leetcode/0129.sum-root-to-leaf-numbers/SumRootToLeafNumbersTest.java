@@ -6,12 +6,12 @@ public class SumRootToLeafNumbersTest {
 
 	@Test
 	public void sumNumbers() {
-		TreeNode node1 = new TreeNode(4);
-		TreeNode node2 = new TreeNode(9);
+		TreeNodeTraversal node1 = new TreeNodeTraversal(4);
+		TreeNodeTraversal node2 = new TreeNodeTraversal(9);
 		node1.left = node2;
-		node1.right = new TreeNode(0);
-		node2.left = new TreeNode(5);
-		node2.right = new TreeNode(1);
+		node1.right = new TreeNodeTraversal(0);
+		node2.left = new TreeNodeTraversal(5);
+		node2.right = new TreeNodeTraversal(1);
 		var demo = new SumRootToLeafNumbers();
 		assertEquals(1026, demo.sumNumbers(node1));
 	}

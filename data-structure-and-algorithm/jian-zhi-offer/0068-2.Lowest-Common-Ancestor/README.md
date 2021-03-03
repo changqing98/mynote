@@ -33,12 +33,12 @@ p、q 为不同节点且均存在于给定的二叉树中。
 5. 如果 left 和 right 都不为空，则说明 p 和 q 在 root 的两侧返回 root 即可
 
 ```java
-    public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+    public static TreeNodeTraversal lowestCommonAncestor(TreeNodeTraversal root, TreeNodeTraversal p, TreeNodeTraversal q) {
         if(root == null || p == root || q == root){
             return root;
         }
-        TreeNode left = lowestCommonAncestor(root.left, p, q);
-        TreeNode right = lowestCommonAncestor(root.right, p, q);
+        TreeNodeTraversal left = lowestCommonAncestor(root.left, p, q);
+        TreeNodeTraversal right = lowestCommonAncestor(root.right, p, q);
         if(left == null){
             return right;
         }

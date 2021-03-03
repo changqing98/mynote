@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from TreeNode import root1
+from TreeNodeTraversal import root1
 from basic.tree.InOrderTraversal import InOrderTraversal
 
 

@@ -1,10 +1,10 @@
 from typing import List
 
-import TreeNode
+import TreeNodeTraversal
 
 
 class InOrderTraversal:
-	def inorderTraversal(self, root: TreeNode) -> List[int]:
+	def inorderTraversal(self, root: TreeNodeTraversal) -> List[int]:
 		result = []
 		stack = []
 		while root or stack:
