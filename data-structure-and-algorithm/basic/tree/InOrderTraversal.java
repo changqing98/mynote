@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class InOrderTraversal {
+class InOrderTraversal {
     public List<Integer> inorderTraversal(TreeNodeTraversal root) {
         List<Integer> result = new ArrayList<>();
         if (root == null) {
@@ -20,4 +20,8 @@ public class InOrderTraversal {
         }
         return result;
     }
+
+	public static void main(String[] args) {
+
+	}
 }
