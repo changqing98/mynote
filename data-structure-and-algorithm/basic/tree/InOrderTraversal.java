@@ -5,12 +5,12 @@ import java.util.Stack;
 public class InOrderTraversal {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> result = new ArrayList<>();
-        if(root == null){
+        if (root == null) {
             return result;
         }
         Stack<TreeNode> stack = new Stack<>();
-        while(root != null || !stack.isEmpty()){
-            while(root != null){
+        while (root != null || !stack.isEmpty()) {
+            while (root != null) {
                 stack.add(root);
                 root = root.left;
             }
