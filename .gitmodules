@@ -4,3 +4,6 @@
 [submodule "data-structure-and-algorithm"]
 	path = data-structure-and-algorithm
 	url = https://github.com/changqing98/data-structure-and-algorithm.git
+[submodule "go/go-infra"]
+	path = go/go-infra
+	url = https://github.com/changqing98/go-infra.git
