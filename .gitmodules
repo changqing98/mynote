@@ -7,3 +7,6 @@
 [submodule "go/go-infra"]
 	path = go/go-infra
 	url = https://github.com/changqing98/go-infra.git
+[submodule "mysql/demo/test_db"]
+	path = mysql/demo/test_db
+	url = https://github.com/datacharmer/test_db.git
