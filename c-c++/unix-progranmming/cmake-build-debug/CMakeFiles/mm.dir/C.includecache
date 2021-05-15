@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/changqing/workspace/mynote/c&c++/unix-progranmming/mm/mm.c
+stdio.h
+/Users/changqing/workspace/mynote/c&c++/unix-progranmming/mm/stdio.h
+
