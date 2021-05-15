@@ -1,12 +1,3 @@
-[submodule "system-design/raft4j"]
-	path = system-design/raft4j
-	url = https://github.com/changqing98/raft4j.git
 [submodule "data-structure-and-algorithm"]
 	path = data-structure-and-algorithm
 	url = https://github.com/changqing98/data-structure-and-algorithm.git
-[submodule "go/go-infra"]
-	path = go/go-infra
-	url = https://github.com/changqing98/go-infra.git
-[submodule "mysql/demo/test_db"]
-	path = mysql/demo/test_db
-	url = https://github.com/datacharmer/test_db.git
