@@ -16,3 +16,4 @@ bin
 __pycahce__
 .vagrant
 *.log
+.vagrant
