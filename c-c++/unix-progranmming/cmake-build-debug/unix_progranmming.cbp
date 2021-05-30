@@ -8,33 +8,33 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug"/>
+				<Option working_dir="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug"/>
+				<Option working_dir="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="hello_world">
-				<Option output="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/hello_world" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug"/>
+			<Target title="sche">
+				<Option output="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/sche" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/include"/>
+					<Add directory="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -42,20 +42,20 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 hello_world"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 sche"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="hello_world/fast">
-				<Option output="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/hello_world" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug"/>
+			<Target title="sche/fast">
+				<Option output="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/sche" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/include"/>
+					<Add directory="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -63,156 +63,20 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 hello_world/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="wait">
-				<Option output="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/wait" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 wait"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="wait/fast">
-				<Option output="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/wait" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 wait/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="fork">
-				<Option output="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/fork" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 fork"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="fork/fast">
-				<Option output="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/fork" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 fork/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="pipe">
-				<Option output="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/pipe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 pipe"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="pipe/fast">
-				<Option output="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/pipe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 pipe/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 sche/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="file">
-				<Option output="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/file" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug"/>
+				<Option output="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/file" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/include"/>
+					<Add directory="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -220,20 +84,20 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 file"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 file"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="file/fast">
-				<Option output="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/file" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug"/>
+				<Option output="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/file" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/include"/>
+					<Add directory="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -241,29 +105,255 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 file/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 file/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mm">
+				<Option output="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/mm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 mm"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mm/fast">
+				<Option output="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/mm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 mm/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fork">
+				<Option output="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/fork" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 fork"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fork/fast">
+				<Option output="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/fork" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 fork/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wait">
+				<Option output="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/wait" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 wait"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wait/fast">
+				<Option output="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/wait" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 wait/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hello_world">
+				<Option output="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/hello_world" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 hello_world"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hello_world/fast">
+				<Option output="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/hello_world" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 hello_world/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pipe">
+				<Option output="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/pipe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 pipe"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pipe/fast">
+				<Option output="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/pipe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 pipe/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/fs/file.c">
+		<Unit filename="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/fs/file.c">
 			<Option target="file"/>
 		</Unit>
-		<Unit filename="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/hello/hello_world.c">
+		<Unit filename="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/hello/hello_world.c">
 			<Option target="hello_world"/>
 		</Unit>
-		<Unit filename="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/ipc/pipe.c">
+		<Unit filename="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/ipc/pipe.c">
 			<Option target="pipe"/>
 		</Unit>
-		<Unit filename="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/proc/fork.c">
+		<Unit filename="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/mm/mm.c">
+			<Option target="mm"/>
+		</Unit>
+		<Unit filename="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/proc/fork.c">
 			<Option target="fork"/>
 		</Unit>
-		<Unit filename="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/proc/wait.c">
+		<Unit filename="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/proc/wait.c">
 			<Option target="wait"/>
 		</Unit>
-		<Unit filename="/Users/changqing/workspace/mynote/c&amp;c++/unix-progranmming/CMakeLists.txt">
+		<Unit filename="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/sche/sche.c">
+			<Option target="sche"/>
+		</Unit>
+		<Unit filename="/Users/changqing/workspace/mynote/c-c++/unix-progranmming/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

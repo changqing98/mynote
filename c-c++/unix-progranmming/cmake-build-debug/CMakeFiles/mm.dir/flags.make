@@ -6,5 +6,5 @@ C_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacO
 
 C_DEFINES = 
 
-C_INCLUDES = -I"/Users/changqing/workspace/mynote/c&c++/unix-progranmming/include" 
+C_INCLUDES = -I/Users/changqing/workspace/mynote/c-c++/unix-progranmming/include 
 

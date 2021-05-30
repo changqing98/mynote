@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/changqing/workspace/mynote/c-c++/unix-progranmming/proc/fork.c" "/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/CMakeFiles/fork.dir/proc/fork.c.o"
+  "/Users/changqing/workspace/mynote/c-c++/unix-progranmming/sche/sche.c" "/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/CMakeFiles/sche.dir/sche/sche.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

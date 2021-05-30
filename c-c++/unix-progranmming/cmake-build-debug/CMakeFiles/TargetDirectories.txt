@@ -1,7 +1,9 @@
-/Users/changqing/workspace/mynote/c&c++/unix-progranmming/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/changqing/workspace/mynote/c&c++/unix-progranmming/cmake-build-debug/CMakeFiles/hello_world.dir
-/Users/changqing/workspace/mynote/c&c++/unix-progranmming/cmake-build-debug/CMakeFiles/wait.dir
-/Users/changqing/workspace/mynote/c&c++/unix-progranmming/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/changqing/workspace/mynote/c&c++/unix-progranmming/cmake-build-debug/CMakeFiles/fork.dir
-/Users/changqing/workspace/mynote/c&c++/unix-progranmming/cmake-build-debug/CMakeFiles/pipe.dir
-/Users/changqing/workspace/mynote/c&c++/unix-progranmming/cmake-build-debug/CMakeFiles/file.dir
+/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/CMakeFiles/sche.dir
+/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/CMakeFiles/file.dir
+/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/CMakeFiles/mm.dir
+/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/CMakeFiles/fork.dir
+/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/CMakeFiles/wait.dir
+/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/CMakeFiles/hello_world.dir
+/Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/CMakeFiles/pipe.dir

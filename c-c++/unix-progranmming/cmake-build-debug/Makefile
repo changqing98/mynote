@@ -68,10 +68,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/changqing/workspace/mynote/c&c++/unix-progranmming"
+CMAKE_SOURCE_DIR = /Users/changqing/workspace/mynote/c-c++/unix-progranmming
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/changqing/workspace/mynote/c&c++/unix-progranmming/cmake-build-debug"
+CMAKE_BINARY_DIR = /Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/changqing/workspace/mynote/c&c++/unix-progranmming/cmake-build-debug/CMakeFiles" "/Users/changqing/workspace/mynote/c&c++/unix-progranmming/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/CMakeFiles /Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/changqing/workspace/mynote/c&c++/unix-progranmming/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/changqing/workspace/mynote/c-c++/unix-progranmming/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -131,30 +131,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hello_world
+# Target rules for targets named sche
 
 # Build rule for target.
-hello_world: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello_world
-.PHONY : hello_world
+sche: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sche
+.PHONY : sche
 
 # fast build rule for target.
-hello_world/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/build
-.PHONY : hello_world/fast
+sche/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sche.dir/build.make CMakeFiles/sche.dir/build
+.PHONY : sche/fast
 
 #=============================================================================
-# Target rules for targets named wait
+# Target rules for targets named file
 
 # Build rule for target.
-wait: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wait
-.PHONY : wait
+file: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 file
+.PHONY : file
 
 # fast build rule for target.
-wait/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wait.dir/build.make CMakeFiles/wait.dir/build
-.PHONY : wait/fast
+file/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file.dir/build.make CMakeFiles/file.dir/build
+.PHONY : file/fast
+
+#=============================================================================
+# Target rules for targets named mm
+
+# Build rule for target.
+mm: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mm
+.PHONY : mm
+
+# fast build rule for target.
+mm/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mm.dir/build.make CMakeFiles/mm.dir/build
+.PHONY : mm/fast
 
 #=============================================================================
 # Target rules for targets named fork
@@ -170,6 +183,32 @@ fork/fast:
 .PHONY : fork/fast
 
 #=============================================================================
+# Target rules for targets named wait
+
+# Build rule for target.
+wait: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wait
+.PHONY : wait
+
+# fast build rule for target.
+wait/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wait.dir/build.make CMakeFiles/wait.dir/build
+.PHONY : wait/fast
+
+#=============================================================================
+# Target rules for targets named hello_world
+
+# Build rule for target.
+hello_world: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello_world
+.PHONY : hello_world
+
+# fast build rule for target.
+hello_world/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/build
+.PHONY : hello_world/fast
+
+#=============================================================================
 # Target rules for targets named pipe
 
 # Build rule for target.
@@ -181,19 +220,6 @@ pipe: cmake_check_build_system
 pipe/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pipe.dir/build.make CMakeFiles/pipe.dir/build
 .PHONY : pipe/fast
-
-#=============================================================================
-# Target rules for targets named file
-
-# Build rule for target.
-file: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 file
-.PHONY : file
-
-# fast build rule for target.
-file/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/file.dir/build.make CMakeFiles/file.dir/build
-.PHONY : file/fast
 
 fs/file.o: fs/file.c.o
 
@@ -276,6 +302,33 @@ ipc/pipe.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pipe.dir/build.make CMakeFiles/pipe.dir/ipc/pipe.c.s
 .PHONY : ipc/pipe.c.s
 
+mm/mm.o: mm/mm.c.o
+
+.PHONY : mm/mm.o
+
+# target to build an object file
+mm/mm.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mm.dir/build.make CMakeFiles/mm.dir/mm/mm.c.o
+.PHONY : mm/mm.c.o
+
+mm/mm.i: mm/mm.c.i
+
+.PHONY : mm/mm.i
+
+# target to preprocess a source file
+mm/mm.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mm.dir/build.make CMakeFiles/mm.dir/mm/mm.c.i
+.PHONY : mm/mm.c.i
+
+mm/mm.s: mm/mm.c.s
+
+.PHONY : mm/mm.s
+
+# target to generate assembly for a file
+mm/mm.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mm.dir/build.make CMakeFiles/mm.dir/mm/mm.c.s
+.PHONY : mm/mm.c.s
+
 proc/fork.o: proc/fork.c.o
 
 .PHONY : proc/fork.o
@@ -330,6 +383,33 @@ proc/wait.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wait.dir/build.make CMakeFiles/wait.dir/proc/wait.c.s
 .PHONY : proc/wait.c.s
 
+sche/sche.o: sche/sche.c.o
+
+.PHONY : sche/sche.o
+
+# target to build an object file
+sche/sche.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sche.dir/build.make CMakeFiles/sche.dir/sche/sche.c.o
+.PHONY : sche/sche.c.o
+
+sche/sche.i: sche/sche.c.i
+
+.PHONY : sche/sche.i
+
+# target to preprocess a source file
+sche/sche.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sche.dir/build.make CMakeFiles/sche.dir/sche/sche.c.i
+.PHONY : sche/sche.c.i
+
+sche/sche.s: sche/sche.c.s
+
+.PHONY : sche/sche.s
+
+# target to generate assembly for a file
+sche/sche.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sche.dir/build.make CMakeFiles/sche.dir/sche/sche.c.s
+.PHONY : sche/sche.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -341,7 +421,9 @@ help:
 	@echo "... file"
 	@echo "... fork"
 	@echo "... hello_world"
+	@echo "... mm"
 	@echo "... pipe"
+	@echo "... sche"
 	@echo "... wait"
 	@echo "... fs/file.o"
 	@echo "... fs/file.i"
@@ -352,12 +434,18 @@ help:
 	@echo "... ipc/pipe.o"
 	@echo "... ipc/pipe.i"
 	@echo "... ipc/pipe.s"
+	@echo "... mm/mm.o"
+	@echo "... mm/mm.i"
+	@echo "... mm/mm.s"
 	@echo "... proc/fork.o"
 	@echo "... proc/fork.i"
 	@echo "... proc/fork.s"
 	@echo "... proc/wait.o"
 	@echo "... proc/wait.i"
 	@echo "... proc/wait.s"
+	@echo "... sche/sche.o"
+	@echo "... sche/sche.i"
+	@echo "... sche/sche.s"
 .PHONY : help
 
 
