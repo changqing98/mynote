@@ -2,10 +2,12 @@
 #include "unistd.h"
 
 int main() {
-    int p = fork();
-    if (p == 0) {
+    int pid = fork();
+    if (pid == 0) {
         printf(("this is child process\n"));
-    } else if (p > 0) {
-        printf("this is parent process, child pid: %d\n", getpid());
+    } else if (pid > 0) {
+        printf("this is parent process, child pid: %d\n", pid);
+    } else {
+        printf("error: %d\n", pid);
     }
 }
