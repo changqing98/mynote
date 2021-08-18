@@ -4,8 +4,8 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.ManyToOne;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinColumns;
 import javax.persistence.Table;
 
 @Entity
@@ -19,8 +19,8 @@ public class Sku implements Serializable {
 
   private int stock;
 
-  @ManyToOne(fetch = FetchType.LAZY)
-  private Goods goods;
+  @JoinColumns(@JoinColumn(name = "goods_id"))
+  private GoodsId goodsId;
 
   protected Sku() {
   }

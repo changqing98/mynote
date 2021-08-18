@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -18,7 +19,8 @@ public class Goods {
 
   private String description;
 
-  @OneToMany(mappedBy = "goods")
+  @OneToMany
+  @JoinColumn(name = "goods_id")
   private List<Sku> skus;
 
   protected Goods() {
@@ -30,7 +32,7 @@ public class Goods {
   }
 
   public void addSku(Sku sku) {
-    if(skus == null){
+    if (skus == null) {
       skus = new ArrayList<>();
     }
     skus.add(sku);
