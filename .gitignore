@@ -17,3 +17,4 @@ __pycahce__
 .vagrant
 *.log
 .vagrant
+cmake-build-debug
